@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*,
+*::after,
+*::before {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Karla', sans-serif;
+   font-family: 'Quicksand', sans-serif;
+}
+
+:root {
+   --bg-gradient-one: linear-gradient(180deg, #0e001a 0%, #200041 100%);
+   --bg-gradient-two: linear-gradient(180deg, #200041 0%, #0e001a 100%);
+   --title-gradient-one: linear-gradient(270deg, #cc00ff 39.82%, #0029FF 132.55%);
+   --title-gradient-two: linear-gradient(90deg, #cc00ff 39.82%, #0029FF 132.55%);
+   --text-light: #FAF2FF;
+   --text-dark: #0e001a;
+   --blue-title-after: #4d19fc;
+}

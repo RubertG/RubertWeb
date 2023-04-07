@@ -1,0 +1,44 @@
+.bg-gradient-one {
+   min-height: 100vh;
+   width: 100vw;
+   background: var(--bg-gradient-one);
+   display: grid;
+   place-items: center;
+   place-content: center;
+}
+
+.bg-gradient-one h1 {
+   color: var(--text-light);
+   font-size: 2.8rem;
+   text-align: center;
+}
+
+.bg-gradient-one p {
+   color: var(--text-light);
+   font-size: 1.2rem;
+   display: flex;
+   gap: 7px;
+}
+
+.bg-gradient-one p>span:nth-child(1) {
+   background: var(--title-gradient-one);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   font-weight: 700;
+   background-clip: text;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   gap: 2px;
+}
+
+.line-title {
+   width: 95%;
+   height: 2px;
+   background: var(--title-gradient-one);
+}
+
+.bg-gradient-one>img {
+   width: 220px;
+   margin: 10px 0;
+}
