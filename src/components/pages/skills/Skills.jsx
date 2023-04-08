@@ -1,10 +1,12 @@
 import "./skills.css"
 import data from "../../../data/data.json"
 import { Nav } from "../../layout/nav/Nav"
+import { ContainerAnimation } from "../../layout/containerAnimation/ContainerAnimation"
 
 export function Skills() {
    return (
       <>
+         <ContainerAnimation />
          <Nav />
          <section className="bg-gradient-two">
             <h2 className="title-gradient">Mis skills<span className="line-title"></span></h2>

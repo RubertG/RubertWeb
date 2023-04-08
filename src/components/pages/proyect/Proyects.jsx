@@ -2,10 +2,12 @@ import "./proyects.css"
 import data from "../../../data/data.json"
 import { Proyect } from "./Proyect"
 import { Nav } from "../../layout/nav/Nav"
+import { ContainerAnimation } from "../../layout/containerAnimation/ContainerAnimation"
 
 export function Proyects() {
    return (
       <>
+         <ContainerAnimation />
          <Nav />
          <section className="bg-gradient-one my">
             <h2 className="title-gradient">
