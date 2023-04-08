@@ -11,11 +11,11 @@
 }
 
 :root {
-   --bg-gradient-one: linear-gradient(180deg, #0e001a 0%, #200041 100%);
-   --bg-gradient-two: linear-gradient(180deg, #200041 0%, #0e001a 100%);
+   --bg-gradient-one: linear-gradient(180deg, #0c0016 0%, #1c0038 100%);
+   --bg-gradient-two: linear-gradient(180deg, #1c0038 0%, #0c0016 100%);
    --title-gradient-one: linear-gradient(270deg, #cc00ff 39.82%, #0029FF 132.55%);
    --title-gradient-two: linear-gradient(90deg, #cc00ff 39.82%, #0029FF 132.55%);
    --text-light: #FAF2FF;
-   --text-dark: #0e001a;
+   --text-dark: #0c0016;
    --blue-title-after: #4d19fc;
 }

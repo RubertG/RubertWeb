@@ -18,18 +18,21 @@
    font-size: 1.2rem;
    display: flex;
    gap: 7px;
+   z-index: 3;
 }
 
-.bg-gradient-one p>span:nth-child(1) {
+.bg-gradient-one p>span:nth-child(1),
+.title-gradient {
    background: var(--title-gradient-one);
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
-   font-weight: 700;
    background-clip: text;
+   font-weight: 700;
    display: flex;
    align-items: center;
    flex-direction: column;
    gap: 2px;
+   z-index: 2;
 }
 
 .line-title {
@@ -39,6 +42,7 @@
 }
 
 .bg-gradient-one>img {
-   width: 220px;
+   width: 240px;
    margin: 10px 0;
+   z-index: 3;
 }

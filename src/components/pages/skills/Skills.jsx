@@ -1,5 +1,9 @@
+import "./skills.css"
+
 export function Skills() {
    return (
-      <h1>Habilidades</h1>
+      <section className="bg-gradient-two">
+         <h2 className="title-gradient">Mis skills<span className="line-title"></span></h2>
+      </section>
    )
 }

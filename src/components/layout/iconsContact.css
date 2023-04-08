@@ -10,4 +10,11 @@
 .container-social>a {
    width: 45px;
    height: 45px;
+   cursor: pointer;
+   z-index: 3;
+}
+
+.container-social>a>img {
+   width: 100%;
+   height: 100%;
 }
