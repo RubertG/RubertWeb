@@ -1,18 +1,24 @@
+import { ContainerAnimation } from "../../layout/containerAnimation/ContainerAnimation"
+import { IconsContact } from "../../layout/iconsContact/IconsContact"
+import { Nav } from "../../layout/nav/Nav"
 import "./home.css"
-import { IconsContact } from "../../layout/IconsContact";
 
 export function Home() {
    return (
-      <section className="bg-gradient-one">
-         <h1>¡Hola mundo!👋</h1>
-         <p>Soy Rubert,
-            <span>
-               {"<DesarrolladorWeb />"}
-               <span className="line-title"></span>
-            </span>
-         </p>
-         <img src="./assets/svgHome/pc.svg" alt="Svg pc" />
-         <IconsContact />
-      </section>
+      <>
+         <ContainerAnimation />
+         <Nav />
+         <section className="bg-gradient-one">
+            <h1>¡Hola mundo!👋</h1>
+            <p>Soy Rubert,
+               <span>
+                  {"<DesarrolladorWeb />"}
+                  <span className="line-title line-title-fine"></span>
+               </span>
+            </p>
+            <img src="./assets/svgHome/pc.svg" alt="Svg pc" />
+            <IconsContact />
+         </section>
+      </>
    )
 }

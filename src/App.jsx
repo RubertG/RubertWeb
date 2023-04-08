@@ -1,5 +1,5 @@
 import './App.css'
-import { ParticlesBackground } from './components/layout/ParticlesBackgroud'
+import { ParticlesBackground } from './components/layout/particles/ParticlesBackgroud'
 import { RooterPrincipal } from './rooter/RooterPrincipal'
 
 function App() {

@@ -1,0 +1,92 @@
+{
+   "skills": [
+      {
+         "id": 1,
+         "name": "HTML",
+         "nameImage": "html"
+      },
+      {
+         "id": 2,
+         "name": "CSS",
+         "nameImage": "css"
+      },
+      {
+         "id": 3,
+         "name": "JavaScript",
+         "nameImage": "javascript"
+      },
+      {
+         "id": 4,
+         "name": "Sass",
+         "nameImage": "sass"
+      },
+      {
+         "id": 5,
+         "name": "React",
+         "nameImage": "react"
+      },
+      {
+         "id": 6,
+         "name": "Boostrap",
+         "nameImage": "boostrap"
+      }
+   ],
+   "proyects": [
+      {
+         "id": 1,
+         "name": "En3Decoro",
+         "smallDesc": "Servicios y catálogo de productos de la empresa",
+         "imgs": [
+            "en3decoro-1",
+            "guessinggame-1",
+            "rick-and-morty-1",
+            "todo-1"
+         ],
+         "longDesc": "Servicios y catálogo de productos de la empresa, Servicios y catálogo de productos de la empresa, Servicios y catálogo de productos de la empresa, Servicios y catálogo de productos de la empresa, Servicios y catálogo de productos de la empresa.",
+         "git": "https://github.com/RubertG/en3decoro-react",
+         "urlPage": "https://en3decoro.netlify.app/"
+      },
+      {
+         "id": 2,
+         "name": "Rick and Morty Characters",
+         "smallDesc": "Personajes de la serie animada con sus caracteristicas",
+         "imgs": [
+            "rick-and-morty-1",
+            "guessinggame-1",
+            "en3decoro-1",
+            "todo-1"
+         ],
+         "longDesc": "Servicios y catálogo de productos de la empresa, Servicios y catálogo de productos de la empresa, Servicios y catálogo de productos de la empresa, Servicios y catálogo de productos de la empresa, Servicios y catálogo de productos de la empresa.",
+         "git": "https://github.com/RubertG/rick-and-morty-characters",
+         "urlPage": "https://rubertg.github.io/rick-and-morty-characters/"
+      },
+      {
+         "id": 3,
+         "name": "TODO",
+         "smallDesc": "Organiza tus tareas",
+         "imgs": [
+            "todo-1",
+            "rick-and-morty-1",
+            "en3decoro-1",
+            "guessinggame-1"
+         ],
+         "longDesc": "Servicios y catálogo de productos de la empresa, Servicios y catálogo de productos de la empresa, Servicios y catálogo de productos de la empresa, Servicios y catálogo de productos de la empresa, Servicios y catálogo de productos de la empresa.",
+         "git": "https://github.com/RubertG/TODO-react",
+         "urlPage": "https://organiza-tareas.netlify.app"
+      },
+      {
+         "id": 4,
+         "name": "GuessingGame",
+         "smallDesc": "Juego de adivinar un número",
+         "imgs": [
+            "guessinggame-1",
+            "todo-1",
+            "en3decoro-1",
+            "rick-and-morty-1"
+         ],
+         "longDesc": "Servicios y catálogo de productos de la empresa, Servicios y catálogo de productos de la empresa, Servicios y catálogo de productos de la empresa, Servicios y catálogo de productos de la empresa, Servicios y catálogo de productos de la empresa.",
+         "git": "https://github.com/RubertG/GuessingGame",
+         "urlPage": "https://rubertg.github.io/GuessingGame/"
+      }
+   ]
+}

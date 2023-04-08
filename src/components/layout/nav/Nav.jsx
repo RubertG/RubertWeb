@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom"
-import { useNavAnimation } from "../../hooks/useNavAnimation"
 import "./nav.css"
+import { useNavAnimation } from "../../../hooks/useNavAnimation"
 
 export function Nav() {
    const { handleToggle } = useNavAnimation()

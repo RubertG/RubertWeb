@@ -1,0 +1,19 @@
+.back-button {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: fixed;
+   width: 45px;
+   height: 45px;
+   background: var(--title-gradient-one);
+   border-radius: 100%;
+   top: 20px;
+   left: 25px;
+   color: black;
+   z-index: 3;
+   transition: all .4s;
+}
+
+.back-button:hover {
+   box-shadow: 0 0 5px 0 #5200a5;
+}
