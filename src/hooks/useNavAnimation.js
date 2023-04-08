@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 
 export function useNavAnimation() {
-   const [toggle, setToggle] = useState(true)
+   const [toggle, setToggle] = useState(false)
 
    const handleToggle = () => {
       setToggle(!toggle)
