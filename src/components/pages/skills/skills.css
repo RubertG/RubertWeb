@@ -9,6 +9,7 @@
 
 .title-gradient {
    font-size: 3rem;
+   padding: 0 10px;
 }
 
 .container-skills {
@@ -59,8 +60,8 @@
    .skill:hover {
       background-color: var(--bg-transparent);
       border-radius: 10px;
-      -webkit-backdrop-filter: blur(3px);
-      backdrop-filter: blur(3px);
+      -webkit-backdrop-filter: blur(2px);
+      backdrop-filter: blur(2px);
       border-left: 1px solid #ffffff07;
       border-bottom: 1px solid #ffffff07;
    }

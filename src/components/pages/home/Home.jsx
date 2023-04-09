@@ -8,7 +8,7 @@ export function Home() {
       <>
          <ContainerAnimation />
          <Nav />
-         <section className="bg-gradient-one">
+         <section className="bg-gradient-one home">
             <h1>¡Hola mundo!👋</h1>
             <p>Soy Rubert,
                <span>
@@ -16,7 +16,7 @@ export function Home() {
                   <span className="line-title line-title-fine"></span>
                </span>
             </p>
-            <img src="./assets/svgHome/pc.svg" alt="Svg pc" />
+            <img className="svg-pc" src="./assets/svgHome/pc.svg" alt="Svg pc" />
             <IconsContact />
          </section>
       </>

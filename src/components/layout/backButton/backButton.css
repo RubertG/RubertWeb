@@ -17,3 +17,23 @@
 .back-button:hover {
    box-shadow: 0 0 5px 0 #5200a5;
 }
+
+a .bi-arrow-left {
+   width: 70%;
+   height: 70%;
+}
+
+a .bi-arrow-left:hover {
+   animation: arrow .4s ease-in-out;
+   animation-iteration-count: 2;
+}
+
+@keyframes arrow {
+   50% {
+      transform: translateX(-3px);
+   }
+
+   100% {
+      transform: translateX(0);
+   }
+}

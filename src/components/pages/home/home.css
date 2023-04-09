@@ -8,7 +8,7 @@
 }
 
 .bg-gradient-one h1 {
-   color: var(--text-light);
+   color: var(--title-light);
    font-size: 2.8rem;
    text-align: center;
 }
@@ -45,8 +45,55 @@
    height: 2px;
 }
 
-.bg-gradient-one>img {
+.svg-pc {
    width: 240px;
    margin: 10px 0;
    z-index: 3;
+}
+
+@media (min-width: 768px) {
+   .home {
+      display: grid;
+      grid-template-areas: "h1 img" "p img" "social img";
+      column-gap: 2%;
+   }
+
+   .bg-gradient-one.home h1 {
+      margin: 0 0 -25px 0;
+      grid-area: h1;
+      align-self: end;
+   }
+
+   .bg-gradient-one.home p {
+      grid-area: p;
+      font-size: 1.1rem;
+      margin: -25px 0 -10px 2px;
+      justify-self: start;
+   }
+
+   .bg-gradient-one p {
+      font-size: 1rem;
+   }
+
+   .home .container-social {
+      grid-area: social;
+      width: 100%;
+      margin: -20px 0 0 -15px;
+      align-self: start;
+      justify-content: start;
+   }
+
+   .container-social img {
+      transition: transform .3s;
+   }
+
+   .container-social img:hover {
+      transform: translateY(-5px);
+   }
+
+   .svg-pc {
+      grid-area: img;
+      width: 280px;
+   }
+
 }

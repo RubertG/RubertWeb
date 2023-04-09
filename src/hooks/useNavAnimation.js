@@ -10,10 +10,17 @@ export function useNavAnimation() {
    useEffect(() => {
       const navToggle = document.querySelector(".nav__container-icon");
       const navOptions = document.querySelectorAll(".nav li");
-      navToggle.classList.toggle("active");
-      navOptions.forEach(
-         option => option.classList.toggle("active")
-      )
+      if (toggle) {
+         navToggle.classList.add("active");
+         navOptions.forEach(
+            option => option.classList.add("active")
+         )
+      } else {
+         navToggle.classList.remove("active");
+         navOptions.forEach(
+            option => option.classList.remove("active")
+         )
+      }
    }, [toggle])
 
    return {

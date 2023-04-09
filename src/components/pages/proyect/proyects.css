@@ -43,7 +43,8 @@
 
 .container-proyect h3 {
    font-size: 1.6rem;
-   margin-top: 10px;
+   margin-top: 15px;
+   margin-bottom: 5px;
 }
 
 .container-proyect p {
@@ -52,7 +53,7 @@
 }
 
 a.title-gradient {
-   font-size: .9rem;
+   font-size: 1rem;
    margin-bottom: 10px;
 }
 
@@ -61,7 +62,7 @@ a.title-gradient {
       padding: 30px 0;
    }
 
-   .container-proyect .line-title {
+   a.title-gradient .line-title {
       opacity: 0;
       width: 0;
       transition: all .3s;

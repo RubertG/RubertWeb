@@ -11,42 +11,78 @@
 }
 
 :root {
-   --bg-gradient-one: linear-gradient(180deg, #040008 0%, #0d001a 100%);
-   --bg-gradient-two: linear-gradient(180deg, #0d001a 0%, #040008 100%);
+   --bg-gradient-one: linear-gradient(180deg, #090011 0%, #200041 100%);
+   --bg-gradient-two: linear-gradient(180deg, #200041 0%, #090011 100%);
    --title-gradient-one: linear-gradient(270deg, #cc00ff 39.82%, #0029FF 132.55%);
    --title-gradient-two: linear-gradient(90deg, #cc00ff 39.82%, #0029FF 132.55%);
-   --text-light: #FAF2FF;
+   --title-light: #FAF2FF;
+   --text-light: #faf2ffc7;
    --text-dark: #0c0016;
    --blue-title-after: #4d19fc;
-   --bg-transparent: #1100224d;
+   --bg-transparent: #4d009918;
+}
+
+body::-webkit-scrollbar {
+   -webkit-appearance: none;
+}
+
+body::-webkit-scrollbar:vertical {
+   width: 10px;
+   background-color: #0d001b;
+}
+
+body::-webkit-scrollbar-button:increment,
+body::-webkit-scrollbar-button:decrement {
+   display: none;
+}
+
+body::-webkit-scrollbar:horizontal {
+   background-color: #0d001b;
+   height: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+   background: #8500a7;
+   border-radius: 20px;
+   border: 2px solid #0d001b;
+}
+
+body::-webkit-scrollbar-track {
+   border-radius: 10px;
 }
 
 .container-animation-init {
-   position: absolute;
+   position: fixed;
    width: 100vw;
    height: 100vh;
    z-index: 100000;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
 }
 
 .container-animation-init {
-   animation: entry .5s both;
-   animation-delay: .8s;
+   animation: entry .3s both;
+   animation-delay: .75s;
 }
 
 .animation-init {
-   width: 100%;
+   width: 120%;
    height: 20%;
-   background: var(--text-dark);
-   animation: entry .5s both ease-in-out;
-   /* animation-delay: .2s; */
+   margin: 0;
+   padding: 0;
+   background: #4c018a;
+   border-radius: 20px;
+   animation: entry .3s both ease-in-out;
+   animation-delay: .15s;
 }
 
 .animation-init:nth-child(2) {
-   animation-delay: .2s;
+   animation-delay: .3s;
 }
 
 .animation-init:nth-child(3) {
-   animation-delay: .4s;
+   animation-delay: .45s;
 }
 
 .animation-init:nth-child(4) {
@@ -54,7 +90,7 @@
 }
 
 .animation-init:nth-child(5) {
-   animation-delay: .8s;
+   animation-delay: .75s;
 }
 
 @keyframes entry {
@@ -65,6 +101,6 @@
 
 @media (min-width: 768px) {
    html {
-      font-size: 1.3rem;
+      font-size: 1.2rem;
    }
 }

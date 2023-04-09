@@ -1,0 +1,57 @@
+.container-slider {
+   width: 90%;
+   max-width: 900px;
+   height: 200px;
+   margin-top: 50px;
+}
+
+.proyect-desc {
+   max-width: 700px;
+   text-align: justify;
+   color: v;
+   font-size: 1rem !important;
+   margin: 30px 10px 20px 10px;
+}
+
+.container-links-proyect {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   gap: 20px;
+   width: 80%;
+   max-width: 650px;
+}
+
+.container-links-proyect .github {
+   width: 40px;
+   height: 40px;
+   transition: all .4s;
+}
+
+.container-links-proyect .github:hover {
+   transform: translateY(-5px);
+}
+
+.container-links-proyect .github img {
+   width: 100%;
+   height: 100%;
+}
+
+.container-links-proyect .url-page {
+   text-decoration: none;
+   font-size: 1.2rem;
+   text-align: center;
+   margin-top: 10px;
+}
+
+@media (min-width: 500px) {
+   .container-slider {
+      height: 300px;
+   }
+}
+
+@media (min-width: 768px) {
+   .container-slider {
+      height: 320px;
+   }
+}
