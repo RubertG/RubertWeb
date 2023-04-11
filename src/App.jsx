@@ -6,8 +6,16 @@ function App() {
 
    return (
       <>
-         <ParticlesBackground />
-         <RooterPrincipal />
+
+         {
+            window.innerWidth > 768 ? (
+               <>
+                  <ParticlesBackground />
+                  <RooterPrincipal />
+               </>
+            ) :
+               <RooterPrincipal />
+         }
       </>
    )
 }

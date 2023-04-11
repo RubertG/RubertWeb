@@ -5,6 +5,9 @@ import { Nav } from "../../layout/nav/Nav"
 import { ContainerAnimation } from "../../layout/containerAnimation/ContainerAnimation"
 
 export function Proyects() {
+
+   const proyects = data.proyects
+
    return (
       <>
          <ContainerAnimation />
@@ -14,9 +17,9 @@ export function Proyects() {
                Mis proyectos
                <span className="line-title"></span>
             </h2>
-            <ul className="container-proyects">
+            <div className="container-proyects">
                {
-                  data.proyects.map((proyect) => {
+                  proyects.map((proyect) => {
                      return (
                         <Proyect
                            key={proyect.id}
@@ -24,7 +27,7 @@ export function Proyects() {
                      )
                   })
                }
-            </ul>
+            </div>
          </section>
       </>
    )

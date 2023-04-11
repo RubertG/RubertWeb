@@ -18,7 +18,7 @@ export function Slider({ images }) {
          {
             images.map((nameImage, index) => {
                const className = index === indexImage ? "slide active" : "slide"
-               const src = `../assets/imgProyects/${nameImage}.jpg`
+               const src = `../assets/imgProyects/${nameImage}-_Pequeña_.webp`
                return (
                   <div key={index} className={className}>
                      {
@@ -26,6 +26,7 @@ export function Slider({ images }) {
                            <img
                               src={src}
                               alt={`Image of the page of ${nameImage}`}
+                              loading="lazy"
                            />
                         )
                      }
@@ -40,13 +41,6 @@ export function Slider({ images }) {
                <path fillRule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
             </svg>
          </button>
-
-
-         {/* 
-         <img src="./assets/imgProyects/en3decoro-1.jpg" alt="" className="slide" />
-         <img src="./assets/imgProyects/guessinggame-1.jpg" alt="" className="slide" />
-         <img src="./assets/imgProyects/rick-and-morty-1.jpg" alt="" className="slide" />
-         <img src="./assets/imgProyects/todo-1.jpg" alt="" className="slide" /> */}
       </div>
    )
 }

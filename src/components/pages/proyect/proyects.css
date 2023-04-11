@@ -11,8 +11,7 @@
    align-items: center;
    justify-content: center;
    flex-wrap: wrap;
-   overflow: hidden;
-   gap: 40px;
+   gap: 50px;
 }
 
 .container-proyect {
@@ -22,6 +21,7 @@
    display: flex;
    flex-direction: column;
    align-items: center;
+   text-decoration: none;
    justify-content: start;
    background-color: var(--bg-transparent);
    border-radius: 10px;
@@ -31,6 +31,13 @@
    border-bottom: 1px solid #ffffff07;
    padding: 10px;
    text-align: center;
+   transition: transform .3s,
+      box-shadow .4s;
+}
+
+.container-proyect:hover {
+   transform: translateY(-3px);
+   box-shadow: 0 0 10px #00000086;
 }
 
 .container-proyect img {
