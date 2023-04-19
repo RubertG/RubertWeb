@@ -1,0 +1,43 @@
+.message {
+   position: fixed;
+   display: inline;
+   bottom: 15px;
+   left: 15px;
+   font-size: 1.2rem;
+   font-weight: 500;
+   padding: 10px 15px;
+   border-radius: 10px;
+   color: var(--text-light);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transform: translateX(-100px);
+   opacity: 0;
+   gap: 10px;
+   -webkit-backdrop-filter: blur(2px);
+   backdrop-filter: blur(2px);
+   z-index: 1000;
+   transition: transform .4s,
+      opacity .4s;
+}
+
+.success {
+
+   background-color: #00fc227c;
+   border: 2px solid #00fc227c;
+}
+
+.error {
+   background-color: #fc00007c;
+   border: 2px solid #fc00007c;
+}
+
+.message>svg {
+   width: 23px;
+   height: 23px;
+}
+
+.active {
+   transform: translateX(0);
+   opacity: 1;
+}
