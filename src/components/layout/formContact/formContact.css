@@ -84,14 +84,6 @@
       transform .1s ease-in-out;
 }
 
-.send:active {
-   transform: scale(.99);
-}
-
-.send:hover {
-   box-shadow: 0 0 15px 0 #410052;
-}
-
 .send p {
    transition: opacity .3s ease-in-out,
       transform .3s ease-in-out;
@@ -135,5 +127,13 @@
    .form input,
    .form textarea {
       font-size: .9rem;
+   }
+
+   .send:active {
+      transform: scale(.99);
+   }
+
+   .send:hover {
+      box-shadow: 0 0 15px 0 #410052;
    }
 }

@@ -72,6 +72,10 @@ a.title-gradient {
 
    }
 
+   .container-proyect img {
+      display: block;
+   }
+
    .container-proyect:hover {
       transform: translateY(-3px);
       box-shadow: 0 0 10px #00000086;
