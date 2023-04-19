@@ -16,7 +16,7 @@
 
 .container-proyect {
    width: 100%;
-   max-width: 450px;
+   max-width: 400px;
    border-radius: 10px;
    display: flex;
    flex-direction: column;
@@ -35,23 +35,13 @@
       box-shadow .4s;
 }
 
-.container-proyect:hover {
-   transform: translateY(-3px);
-   box-shadow: 0 0 10px #00000086;
-}
-
 .container-proyect img {
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
-   object-position: center;
-   border-radius: 10px;
+   display: none;
 }
 
 .container-proyect h3 {
-   font-size: 1.6rem;
-   margin-top: 15px;
-   margin-bottom: 5px;
+   font-size: 1.8rem;
+   margin-bottom: 15px;
 }
 
 .container-proyect p {
@@ -67,6 +57,24 @@ a.title-gradient {
 @media (min-width: 768px) {
    .my {
       padding: 30px 0;
+   }
+
+   .container-proyect img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 10px;
+   }
+
+   .container-proyect h3 {
+      margin-top: 15px;
+
+   }
+
+   .container-proyect:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0 10px #00000086;
    }
 
    a.title-gradient .line-title {

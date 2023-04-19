@@ -3,7 +3,7 @@ import { useState } from "react";
 export function useSlider(images) {
    const [indexImage, setIndexImage] = useState(0)
 
-   const length = images?.length
+   const length = images.length
 
    const next = () => {
       const newIndexImage = indexImage !== length - 1 ? indexImage + 1 : 0

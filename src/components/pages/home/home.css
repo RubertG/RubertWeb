@@ -88,7 +88,7 @@
    }
 
    .container-social img:hover {
-      transform: translateY(-5px);
+      transform: translateY(-4px);
    }
 
    .svg-pc {

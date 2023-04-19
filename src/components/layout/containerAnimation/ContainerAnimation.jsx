@@ -1,3 +1,5 @@
+import "./containerAnimation.css"
+
 export function ContainerAnimation() {
    return (
       <div className="container-animation-init">

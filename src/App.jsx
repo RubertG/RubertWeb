@@ -6,7 +6,6 @@ function App() {
 
    return (
       <>
-
          {
             window.innerWidth > 768 ? (
                <>

@@ -9,7 +9,6 @@ export function PageProyect() {
 
    const { name } = useParams()
    const proyect = data.proyects.find((p) => name === p.name)
-
    if (!proyect) return;
 
    return (
@@ -31,7 +30,13 @@ export function PageProyect() {
                <a href={proyect.git} target="_blank" className="github">
                   <img src="../assets/svgSocial/github.svg" alt="Image github" />
                </a>
-               <a href={proyect.urlPage} target="_blank" className="title-gradient url-page">Ver página <span className="line-title line-title-fine"></span></a>
+               <a
+                  href={proyect.urlPage}
+                  target="_blank"
+                  className="title-gradient url-page">
+                  Ver página
+                  <span className="line-title line-title-fine"></span>
+               </a>
             </div>
          </section>
       </>
