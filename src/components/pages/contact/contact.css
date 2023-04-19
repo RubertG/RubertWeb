@@ -27,6 +27,7 @@
    backdrop-filter: blur(2px);
    border-left: 1px solid #ffffff07;
    border-bottom: 1px solid #ffffff07;
+   box-shadow: 0 0 10px 0 #12001491;
 }
 
 .form textarea {

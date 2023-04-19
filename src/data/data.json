@@ -63,7 +63,7 @@
       {
          "id": 3,
          "name": "TODO",
-         "smallDesc": "Organiza tus tareas o TODO para colocar las tareas de tu día. Está hecho con React.",
+         "smallDesc": "Organiza tus tareas o TODO para colocar las actividades por hacer en tu día. Hecho con React.",
          "imgs": [
             "todo-1",
             "rick-and-morty-1",

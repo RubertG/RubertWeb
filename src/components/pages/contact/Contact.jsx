@@ -13,20 +13,20 @@ export function Contact() {
                Contacto
                <span className="line-title"></span>
             </h2>
-            <form className="form">
+            <form name="form-contact" className="form" netlify>
                <label htmlFor="name">
                   Nombre
                </label>
-               <input type="text" id="name" placeholder="Pepito Perez" name="name" />
+               <input type="text" placeholder="Pepito Perez" name="name" />
                <label htmlFor="email">
                   Email
                </label>
-               <input type="email" id="Email" placeholder="ejemplo@ejemplo.com" name="email" />
+               <input type="email" placeholder="ejemplo@ejemplo.com" name="email" />
                <label htmlFor="message">
                   Mensaje
                </label>
-               <textarea id="message" placeholder="Excribe tu mensaje" name="message" />
-               <button className="send">Enviar</button>
+               <textarea placeholder="Excribe tu mensaje" name="message" />
+               <button type="submit" className="send">Enviar</button>
             </form>
             <IconsContact />
          </section>
