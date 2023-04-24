@@ -5,6 +5,8 @@ import options from "./config/particlesjs-config.json"
 
 export function ParticlesBackground() {
 
+   if (window.innerWidth < 768) return
+
    const particlesInit = useCallback(engine => {
       loadFull(engine);
    }, []);
