@@ -17,7 +17,7 @@ export function Contact() {
          <Message text="Enviado" success={success} />
          <section className="bg-gradient-two my-2">
             <h2 className="title-gradient">
-               Contacto
+               Contáctame
                <span className="line-title"></span>
             </h2>
             <FormContact handleSubmit={handleSubmit} loading={loading} />

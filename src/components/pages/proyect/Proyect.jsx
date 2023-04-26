@@ -1,14 +1,24 @@
+import { useState } from "react"
+import { useEffect } from "react"
 import { Link } from "react-router-dom"
 
 export function Proyect({ proyect }) {
 
-   const src = `./assets/imgProyects/${proyect.imgs[0]}-_Pequeña_.webp`
+   const [className, setClassName] = useState("container-proyect hidden")
+
+   useEffect(() => {
+      const img = new Image()
+      img.src = proyect.imgs[0]
+      img.onload = () => {
+         setClassName("container-proyect")
+      };
+   }, [])
 
    return (
-      <div className="container-proyect">
+      <div className={className}>
          <img
-            src={src}
-            alt={`Image of ${proyect.imgs[0]}`}
+            src={proyect.imgs[0]}
+            alt={`Image of ${proyect.name}`}
             loading="lazy" />
          <h3 className="title-gradient">{proyect.name}</h3>
          <p>{proyect.smallDesc}</p>

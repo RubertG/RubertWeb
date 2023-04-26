@@ -35,7 +35,7 @@
       {
          "id": 1,
          "name": "En3Decoro",
-         "smallDesc": "Servicios y catálogo de productos de la microempresa En3Decoro. Hecha en React y Framer Motion",
+         "smallDesc": "Servicios y catálogo de productos de la microempresa En3Decoro.",
          "imgs": [
             "en3decoro-1",
             "guessinggame-1",

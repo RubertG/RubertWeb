@@ -19,14 +19,13 @@ export function Slider({ images }) {
          {
             images.map((nameImage, index) => {
                const className = index === indexImage ? "slide active" : "slide"
-               const src = `../assets/imgProyects/${nameImage}-_Pequeña_.webp`
                return (
                   <div key={index} className={className}>
                      {
                         indexImage === index && (
                            <img
-                              src={src}
-                              alt={`Image of the page of ${nameImage}`}
+                              src={nameImage}
+                              alt={`Image of ${nameImage}`}
                               loading="lazy"
                            />
                         )

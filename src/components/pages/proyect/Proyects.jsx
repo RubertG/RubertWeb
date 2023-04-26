@@ -1,12 +1,17 @@
 import "./proyects.css"
-import data from "../../../data/data.json"
 import { Proyect } from "./Proyect"
 import { Nav } from "../../layout/nav/Nav"
 import { ContainerAnimation } from "../../layout/containerAnimation/ContainerAnimation"
+import "../../../firebase/config"
+import { useContext } from "react"
+import { ProyectsContext } from "../../../context/ProyectsContext"
+import { useLoadProyects } from "../../../hooks/useLoadProyects"
+import { Loader } from "../../layout/loader/Loader"
 
 export function Proyects() {
 
-   const proyects = data.proyects
+   const { proyects } = useContext(ProyectsContext)
+   useLoadProyects()
 
    return (
       <>
@@ -19,13 +24,15 @@ export function Proyects() {
             </h2>
             <div className="container-proyects">
                {
-                  proyects.map((proyect) => {
+                  proyects ? proyects.map((proyect) => {
                      return (
                         <Proyect
                            key={proyect.id}
                            proyect={proyect} />
                      )
-                  })
+                  }) : (
+                     <Loader />
+                  )
                }
             </div>
          </section>
