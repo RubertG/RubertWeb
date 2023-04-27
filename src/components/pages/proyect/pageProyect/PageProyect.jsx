@@ -3,24 +3,16 @@ import { BackButton } from "../../../layout/backButton/BackButton"
 import "./pageProyect.css"
 import { ContainerAnimation } from "../../../layout/containerAnimation/ContainerAnimation"
 import { Slider } from "../../../layout/slider/Slider"
-import { useContext } from "react"
-import { ProyectsContext } from "../../../../context/ProyectsContext"
 import { useEffect } from "react"
-import { useState } from "react"
 import { useLoadProyects } from "../../../../hooks/useLoadProyects"
 import { Loader } from "../../../layout/loader/Loader"
 
 export function PageProyect() {
 
-   const [proyect, setProyect] = useState()
-   const { proyects } = useContext(ProyectsContext)
-   const { name } = useParams()
-   useLoadProyects()
+   const { id } = useParams()
+   const { proyect, getProyect } = useLoadProyects()
 
-   useEffect(() => {
-      if (!proyects) return
-      setProyect(proyects.find((p) => name === p.name))
-   }, [proyects])
+   useEffect(() => getProyect(id), [])
 
    return (
       <>

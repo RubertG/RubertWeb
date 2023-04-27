@@ -22,7 +22,7 @@ export function Proyect({ proyect }) {
             loading="lazy" />
          <h3 className="title-gradient">{proyect.name}</h3>
          <p>{proyect.smallDesc}</p>
-         <Link to={proyect.name} className="title-gradient">Ver más<span className="line-title line-title-fine"></span></Link>
+         <Link to={proyect.id} className="title-gradient">Ver más<span className="line-title line-title-fine"></span></Link>
       </div>
    )
 }

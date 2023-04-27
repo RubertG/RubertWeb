@@ -1,17 +1,17 @@
+import "../../../firebase/config"
 import "./proyects.css"
 import { Proyect } from "./Proyect"
 import { Nav } from "../../layout/nav/Nav"
 import { ContainerAnimation } from "../../layout/containerAnimation/ContainerAnimation"
-import "../../../firebase/config"
-import { useContext } from "react"
-import { ProyectsContext } from "../../../context/ProyectsContext"
+import { useEffect } from "react"
 import { useLoadProyects } from "../../../hooks/useLoadProyects"
 import { Loader } from "../../layout/loader/Loader"
 
 export function Proyects() {
 
-   const { proyects } = useContext(ProyectsContext)
-   useLoadProyects()
+   const { proyects, getProyects, getProyect } = useLoadProyects()
+
+   useEffect(() => getProyects(), [])
 
    return (
       <>

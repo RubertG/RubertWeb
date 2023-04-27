@@ -14,7 +14,7 @@ export function RooterPrincipal() {
             <Route path="/home" element={<Home />} />
             <Route path="/skills" element={<Skills />} />
             <Route path="/proyects" element={<Proyects />} />
-            <Route path="/proyects/:name" element={<PageProyect />} />
+            <Route path="/proyects/:id" element={<PageProyect />} />
             <Route path='/contact' element={<Contact />} />
             <Route path='/*' element={<Error />} />
          </Routes>
