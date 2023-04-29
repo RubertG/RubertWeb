@@ -6,6 +6,7 @@ import { db } from "../firebase/config"
 export function useLoadProyects() {
    const { proyects, setProyects } = useContext(ProyectsContext)
    const [proyect, setProyect] = useState()
+   const [projectNotFound, setProjectNotFound] = useState(false)
 
    const getProyects = () => {
       if (proyects) return
@@ -40,6 +41,7 @@ export function useLoadProyects() {
          setProyect({ ...proyect, id: aux.id, imgs })
       } else {
          setProyect(null)
+         setProjectNotFound(true)
       }
    }
 
@@ -47,6 +49,7 @@ export function useLoadProyects() {
       getProyects,
       proyects,
       proyect,
+      projectNotFound,
       getProyect
    }
 }

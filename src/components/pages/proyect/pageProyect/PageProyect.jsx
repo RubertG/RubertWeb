@@ -6,11 +6,12 @@ import { Slider } from "../../../layout/slider/Slider"
 import { useEffect } from "react"
 import { useLoadProyects } from "../../../../hooks/useLoadProyects"
 import { Loader } from "../../../layout/loader/Loader"
+import { ValidationErrors } from "./ValidationErrors"
 
 export function PageProyect() {
 
    const { id } = useParams()
-   const { proyect, getProyect } = useLoadProyects()
+   const { proyect, getProyect, projectNotFound } = useLoadProyects()
 
    useEffect(() => getProyect(id), [])
 
@@ -18,7 +19,7 @@ export function PageProyect() {
       <>
          <ContainerAnimation />
          {
-            proyect ? (
+            proyect && (
                <section className="bg-gradient-one my">
                   <BackButton rute="/proyects" />
                   <h2 className="title-gradient">
@@ -44,13 +45,9 @@ export function PageProyect() {
                      </a>
                   </div>
                </section>
-            ) : (
-               <section className="bg-gradient-one my">
-                  <BackButton rute="/proyects" />
-                  <Loader />
-               </section>
             )
          }
+         <ValidationErrors proyect={proyect} projectNotFound={projectNotFound} />
       </>
    )
 }

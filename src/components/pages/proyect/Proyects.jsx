@@ -9,7 +9,7 @@ import { Loader } from "../../layout/loader/Loader"
 
 export function Proyects() {
 
-   const { proyects, getProyects, getProyect } = useLoadProyects()
+   const { proyects, getProyects } = useLoadProyects()
 
    useEffect(() => getProyects(), [])
 
