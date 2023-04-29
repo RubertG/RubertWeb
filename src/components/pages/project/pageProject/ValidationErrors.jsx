@@ -1,22 +1,22 @@
 import { BackButton } from "../../../layout/backButton/BackButton";
 import { Loader } from "../../../layout/loader/Loader";
 
-export function ValidationErrors({ children, proyect, projectNotFound }) {
+export function ValidationErrors({ project, projectNotFound }) {
    return (
       <>
          {
-            !proyect && !projectNotFound && (
+            !project && !projectNotFound && (
                <section className="bg-gradient-one my">
-                  <BackButton rute="/proyects" />
+                  <BackButton rute="/projects" />
                   <Loader />
                </section>
             )
          }
 
          {
-            !proyect && projectNotFound && (
+            !project && projectNotFound && (
                <section className="bg-gradient-one my">
-                  <BackButton rute="/proyects" />
+                  <BackButton rute="/projects" />
                   <h1>Proyecto inexistente en la base de datos :(</h1>
                </section>
             )

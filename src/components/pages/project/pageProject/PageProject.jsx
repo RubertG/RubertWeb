@@ -1,43 +1,42 @@
 import { useParams } from "react-router"
 import { BackButton } from "../../../layout/backButton/BackButton"
-import "./pageProyect.css"
+import "./pageProject.css"
 import { ContainerAnimation } from "../../../layout/containerAnimation/ContainerAnimation"
 import { Slider } from "../../../layout/slider/Slider"
 import { useEffect } from "react"
-import { useLoadProyects } from "../../../../hooks/useLoadProyects"
-import { Loader } from "../../../layout/loader/Loader"
+import { useLoadProjects } from "../../../../hooks/useLoadProjects"
 import { ValidationErrors } from "./ValidationErrors"
 
-export function PageProyect() {
+export function PageProject() {
 
    const { id } = useParams()
-   const { proyect, getProyect, projectNotFound } = useLoadProyects()
+   const { project, getProject, projectNotFound } = useLoadProjects()
 
-   useEffect(() => getProyect(id), [])
+   useEffect(() => getProject(id), [])
 
    return (
       <>
          <ContainerAnimation />
          {
-            proyect && (
+            project && (
                <section className="bg-gradient-one my">
-                  <BackButton rute="/proyects" />
+                  <BackButton rute="/projects" />
                   <h2 className="title-gradient">
-                     {proyect.name}
+                     {project.name}
                      <span className="line-title"></span>
                   </h2>
                   <div className="container-slider">
-                     <Slider images={proyect.imgs} />
+                     <Slider images={project.imgs} />
                   </div>
                   <p className="proyect-desc">
-                     {proyect.longDesc}
+                     {project.longDesc}
                   </p>
                   <div className="container-links-proyect">
-                     <a href={proyect.git} target="_blank" className="github">
+                     <a href={project.git} target="_blank" className="github">
                         <img src="../assets/svgSocial/github.svg" alt="Image github" />
                      </a>
                      <a
-                        href={proyect.urlPage}
+                        href={project.urlPage}
                         target="_blank"
                         className="title-gradient url-page">
                         Ver página
@@ -47,7 +46,7 @@ export function PageProyect() {
                </section>
             )
          }
-         <ValidationErrors proyect={proyect} projectNotFound={projectNotFound} />
+         <ValidationErrors project={project} projectNotFound={projectNotFound} />
       </>
    )
 }

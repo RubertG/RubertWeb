@@ -1,17 +1,17 @@
 import "../../../firebase/config"
-import "./proyects.css"
-import { Proyect } from "./Proyect"
+import "./projects.css"
+import { Project } from "./Project"
 import { Nav } from "../../layout/nav/Nav"
 import { ContainerAnimation } from "../../layout/containerAnimation/ContainerAnimation"
 import { useEffect } from "react"
-import { useLoadProyects } from "../../../hooks/useLoadProyects"
+import { useLoadProjects } from "../../../hooks/useLoadProjects"
 import { Loader } from "../../layout/loader/Loader"
 
-export function Proyects() {
+export function Projects() {
 
-   const { proyects, getProyects } = useLoadProyects()
+   const { projects, getProjects } = useLoadProjects()
 
-   useEffect(() => getProyects(), [])
+   useEffect(() => getProjects(), [])
 
    return (
       <>
@@ -24,11 +24,11 @@ export function Proyects() {
             </h2>
             <div className="container-proyects">
                {
-                  proyects ? proyects.map((proyect) => {
+                  projects ? projects.map((project) => {
                      return (
-                        <Proyect
-                           key={proyect.id}
-                           proyect={proyect} />
+                        <Project
+                           key={project.id}
+                           project={project} />
                      )
                   }) : (
                      <Loader />

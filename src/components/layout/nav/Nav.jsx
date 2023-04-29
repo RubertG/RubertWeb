@@ -36,7 +36,7 @@ export function Nav() {
             <li
                className="nav__proyectos"
                onClick={handleToggle}>
-               <NavLink to="/proyects">
+               <NavLink to="/projects">
                   <img src="./assets/svgNav/tools.svg" alt="Mis proyectos" />
                   <p className="nav-li-title">Proyectos</p>
                </NavLink>

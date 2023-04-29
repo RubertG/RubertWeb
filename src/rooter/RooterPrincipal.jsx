@@ -1,9 +1,9 @@
 import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom'
 import { Skills } from '../components/pages/skills/Skills';
 import { Contact } from '../components/pages/contact/Contact';
-import { Proyects } from '../components/pages/proyect/Proyects';
+import { Projects } from '../components/pages/project/Projects';
 import { Error } from '../components/pages/404/Error';
-import { PageProyect } from '../components/pages/proyect/pageProyect/PageProyect';
+import { PageProject } from '../components/pages/project/pageProject/PageProject';
 import { Home } from '../components/pages/home/Home';
 
 export function RooterPrincipal() {
@@ -13,8 +13,8 @@ export function RooterPrincipal() {
             <Route path="/" element={<Navigate to="/home" />} />
             <Route path="/home" element={<Home />} />
             <Route path="/skills" element={<Skills />} />
-            <Route path="/proyects" element={<Proyects />} />
-            <Route path="/proyects/:id" element={<PageProyect />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/projects/:id" element={<PageProject />} />
             <Route path='/contact' element={<Contact />} />
             <Route path='/*' element={<Error />} />
          </Routes>

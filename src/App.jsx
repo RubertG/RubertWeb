@@ -1,19 +1,19 @@
 import './App.css'
 import { ParticlesBackground } from './components/layout/particles/ParticlesBackgroud'
 import { RooterPrincipal } from './rooter/RooterPrincipal'
-import { ProyectsContext } from './context/ProyectsContext'
+import { ProjectsContext } from './context/ProjectsContext'
 import { useState } from 'react'
 
 function App() {
 
-   const [proyects, setProyects] = useState(null)
+   const [projects, setProjects] = useState(null)
 
    return (
       <>
          <ParticlesBackground />
-         <ProyectsContext.Provider value={{ proyects, setProyects }}>
+         <ProjectsContext.Provider value={{ projects, setProjects }}>
             <RooterPrincipal />
-         </ProyectsContext.Provider>
+         </ProjectsContext.Provider>
       </>
    )
 }
