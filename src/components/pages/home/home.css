@@ -47,6 +47,7 @@
 
 .svg-pc {
    width: 240px;
+   min-height: 300px;
    margin: 10px 0;
    z-index: 3;
 }
