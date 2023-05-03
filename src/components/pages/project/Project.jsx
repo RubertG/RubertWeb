@@ -7,7 +7,7 @@ export function Project({ project }) {
    const [className, setClassName] = useState("container-proyect hidden")
 
    useEffect(() => {
-      if (window.innerWidth > 768) {
+      if (window.innerWidth < 768) {
          setClassName("container-proyect")
       } else {
          const img = new Image()
@@ -21,7 +21,7 @@ export function Project({ project }) {
    return (
       <div className={className}>
          {
-            window.innerWidth > 768 && (
+            !(window.innerWidth < 768) && (
                <img
                   src={project.imgs[0]}
                   alt={`Image of ${project.name}`}
